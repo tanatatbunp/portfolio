@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Online Pharmacy</title>
+    <style>
+        .font{ 
+            font-family: "Montserrat", sans-serif;
+        }
+    </style>
+</head>
+<body class="font mt-2">
+    <header class="flex container mx-auto">
+
+        <!-- Logo Image -->
+        <a href="">
+        <img 
+        src="./Assets/Rosemary-2.png" 
+        alt="Rosemary logo" 
+        class="w-36">
+        </a>
+
+        <!-- Navigation Link -->
+        <nav class="flex flex-1 mx-auto px-4 items-center justify-end
+        font-semibold text-sm text-center" >
+            <a href="#"
+            class="w-32 px-4 py-2 mx-2 border-2 border-violet-400 rounded-full text-violet-700
+            hover:bg-violet-400 hover:text-white hover:ring hover:ring-fuchsia-400
+            active:border-violet-500 active:bg-violet-500">
+                Home
+            </a>
+            <a href="#"
+            class="w-32 px-4 py-2 mx-2 border-2 border-violet-400 rounded-full text-violet-700
+            hover:bg-violet-400 hover:text-white hover:ring hover:ring-fuchsia-400
+            active:border-violet-500 active:bg-violet-500">
+                About
+            </a>
+            <a href="#"
+            class="w-32 px-4 py-2 mx-2 border-2 border-violet-400 rounded-full text-violet-700
+            hover:bg-violet-400 hover:text-white hover:ring hover:ring-fuchsia-400
+            active:border-violet-500 active:bg-violet-500">
+                Doctors
+            </a>
+            <a href="#"
+            class="w-32 px-4 py-2 mx-2 border-2 border-violet-400 rounded-full text-violet-700
+            hover:bg-violet-400 hover:text-white hover:ring hover:ring-fuchsia-400
+            active:border-violet-500 active:bg-violet-500">
+                Medicine
+            </a>
+            <a href="#"
+            class="w-32 px-4 py-2 mx-2 border-2 border-violet-400 rounded-full text-violet-700
+            hover:bg-violet-400 hover:text-white hover:ring hover:ring-fuchsia-400
+            active:border-violet-500 active:bg-violet-500">
+                Service
+            </a>
+            <a href="#"
+            class="w-32 px-4 py-2 ml-2 border-2 border-violet-400 rounded-full text-violet-700
+            hover:bg-violet-400 hover:text-white hover:ring hover:ring-fuchsia-400
+            active:border-violet-500 active:bg-violet-500">
+                Contact Us
+            </a>
+        </nav>
+
+        <!-- Search Bar -->
+        <div class="flex w-40 items-center justify-center">
+
+            <input 
+            type="text"
+            style="background-image: url(./Assets/search.svg);
+            background-repeat: no-repeat;
+            background-position: 6px 7px;"
+            placeholder="search"
+            class="w-full rounded-full mx-2 py-2 pl-9 border-2 border-slate-400 text-sm">            
+        </div>
+
+        <!-- Login/Register -->
+        <div class="flex w-48 items-center justify-around">
+        <button
+        type="submit"
+        class="w-28 border-2 px-4 py-2 rounded-l-full text-sm
+        bg-fuchsia-400 border-fuchsia-400
+        hover:bg-fuchsia-500 hover:border-fuchsia-500
+        active:bg-fuchsia-600 active:border-fuchsia-600">Login</button>
+
+        <button
+        type="submit"
+        class="w-28 border-2 px-4 py-2 rounded-r-full text-sm
+        bg-transparent border-violet-400
+        hover:bg-violet-200 hover:border-fuchsia-500
+        active:bg-violet-300 active:border-fuchsia-600"
+        >Register</button>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section 
+        style="height: 650px;"
+        class="bg-white border-t border-violet-500">
+        <div
+        style="background-image: url(./Assets/Banner.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: right;"
+        class="h-full">
+            <div 
+            class="w-5/12 px-14 h-full flex flex-col justify-center items-center text-center">
+                <p class="text-5xl font-semibold my-2 text-violet-700">
+                    We are 
+                    <span class="italic">
+                        "Rosemary"
+                    </span>
+                </p>
+
+                <p class="text-lg my-4">Best online 
+                    <span class="text-fuchsia-600">pharmaceutical</span>  
+                    ready 24/7 for you 
+                    <span class="text-lg text-violet-400">&#10047;</span>
+                </p>
+                <p class="text-sm">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda labore tenetur reiciendis nam voluptate, 
+                    recusandae quod rerum id tempore earum expedita a animi quo veritatis, ullam, velit eius necessitatibus eligendi.
+                </p>
+                <div class="mt-20">
+                    <button 
+                        class="bg-violet-100 mx-2 p-6 w-64 rounded-full border-2 border-violet-400 text-violet-700 font-semibold
+                        hover:text-white hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 ease-linear duration-200">
+                         Make an appointment
+                    </button>
+                    <button
+                        class="bg-fuchsia-100 mx-2 p-6 w-64 rounded-full border-2 border-fuchsia-400 text-fuchsia-600 font-semibold
+                        hover:text-white hover:bg-gradient-to-r from-fuchsia-500 to-violet-500 ease-linear duration-200">
+                        Make an order
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>    
+</body>
+</html>

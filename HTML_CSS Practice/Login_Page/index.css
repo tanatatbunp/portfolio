@@ -1,0 +1,149 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f6f5f7;
+    box-sizing: border-box;
+    z-index: -1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: -20px;
+    margin-bottom: 50px;
+
+}
+
+footer {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    width: 100%;
+    position: fixed;
+    font-size: 14px;
+    height: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* margin: 10px 0; */
+}
+
+footer > p {    
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0;
+
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.container-form {
+    background-color: #f6f5f7;
+    width: 768px;
+    max-width: 100%;    
+    height: 480px;
+    min-height: 480px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 14px 28px 0 rgba(0, 0, 0, 0.25),
+    0 10px 10px 0 rgba(0, 0, 0, 0.22);
+}
+
+.signin {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px;
+    text-align: center;
+    
+}
+
+.signin > h1 {
+    font-weight: 800;
+    margin: 0;
+}
+
+.signin > span {
+    font-size: 12px;
+    color: rgb(51, 51, 51);
+}
+
+.signin > input {
+    padding: 12px 15px;
+    width: 254px;
+    margin: 8px 0;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    font-size: 11px;
+}
+
+.signin > a {
+    margin: 15px 0;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+}
+
+.signin > button {
+    color: white;
+    font-weight: bold;
+    padding: 11px 45px 12px 45px;
+    border: 1px solid #ff4b2b;
+    border-radius: 20px;
+    background-color: #ff4b2b;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.signup > h1 {
+    font-weight: 800;
+    margin: 0;
+}
+
+
+.signup {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 10px 10px 0px;
+    background-image: linear-gradient(to right, #FF4B2B, #FF416C);
+    /* background-color: #FF416C; */
+    padding: 0 50px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.signup > span {
+    font-size: 14px;
+    margin: 20px 0 30px 0;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+
+.signup > button {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 11px 45px 12px 45px;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: transparent;
+    letter-spacing: 0.5px;
+}
+
+
+

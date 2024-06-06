@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Sign in</title>
+  </head>
+  <body
+    class="bg-gradient-to-r from-indigo-300 to-fuchsia-300 h-screen w-screen flex items-center"
+  >
+    <main
+      class="flex mx-auto w-10/12 h-5/6 text-slate-700 rounded-xl shadow-2xl"
+    >
+      <section
+        style="
+          background-image: url(./Assets/room.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        "
+        class="w-8/12 flex flex-col rounded-l-xl"
+      >
+        <div class="flex flex-col mt-48 h-full">
+          <p class="my-8 px-8 text-4xl font-bold text-fuchsia-900 text-center">
+            About this website
+          </p>
+          <p class="px-48 text-slate-900">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere,
+            alias placeat provident fugiat officiis amet a, beatae voluptatum
+            maxime exercitationem animi debitis veritatis sint corporis non
+            voluptatibus laudantium accusamus ex.
+          </p>
+        </div>
+        <div class="flex justify-end mr-8"></div>
+      </section>
+      <section
+        class="bg-white w-4/12 flex-row flex justify-center items-center rounded-r-xl"
+      >
+        <article class="border-solid p-8 w-10/12 bg-white">
+          <!-- Header -->
+
+          <h1 class="text-4xl font-bold text-center">Welcome!</h1>
+          <h2 class="text-sm mb-6 text-center">
+            We loved that you're here!
+            <span class="text-red-600 font-bold text-lg">&hearts;</span>
+          </h2>
+
+          <!-- Sign Up -->
+
+          <p class="text-sm mb-9">
+            Not have account?
+            <a href="#" class="text-sky-700 hover:underline"> Sign up </a>
+          </p>
+          <form action="" class="h-full">
+            <!-- Email address -->
+            <div>
+            <p class="mb-1 text-sm">Email Address</p>
+            <input
+              type="email"
+              required
+              placeholder="johndoe007@gmail.com"
+              class="mb-1 w-full h-10 rounded-lg p-4 border border-violet-300 shadow-sm i
+              nvalid:text-pink-600 focus:invalid:border-pink-500 
+              peer"
+            />
+
+            <p
+              class="mb-4 ml-4 text-sm invisible 
+              peer-placeholder-shown:!invisible peer-invalid:visible 
+              text-pink-600"
+            >
+              Please provide a valid email address.
+            </p>
+            </div>
+            <!-- Password -->
+
+            <div>
+            <p class="mb-1 text-sm">Password</p>
+
+            <!-- Pattern \d means range of digit (0-9) -->
+            <input
+              type="password"
+              required
+              minlength="8"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+              title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+              autocomplete="off"
+              placeholder="Enter your password"
+              class="mb-1 w-full h-10 rounded-lg p-4 border border-violet-300 shadow-sm peer"
+            />      
+
+            <!-- <p
+              class="mb-4 ml-4 text-sm 
+              peer-placeholder-shown:!invisible peer-invalid:visible 
+              text-pink-600"
+            >
+              Please provide a valid password.
+            </p> -->
+            
+            </div>
+            <!-- Forgot Password -->
+
+            <div class="mb-9 text-sky-700">
+              <a href="#" class="text-xs hover:underline">
+                Forgot your password?
+              </a>
+            </div>
+
+            <!-- Remember Me -->
+
+            <div class="flex items-center">
+              <input type="checkbox" name="id" id="rememberme" class="size-6 accent-fuchsia-500" />
+              <label for="rememberme" class="m-2 text-sm items-center"
+                >Remember me</label
+              >
+            </div>
+
+            <!-- Log in button -->
+
+            <div>
+              <button
+                type="submit"
+                class="flex w-full justify-center rounded-xl bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 p-3 text-lg font-semibold shadow-md text-white shadow-sm hover:bg-indigo-500"
+              >
+                Log in
+              </button>
+            </div>
+            <hr class="my-4" />
+
+            <!-- Or Login With -->
+
+            <p class="flex mb-2 justify-center text-sm">Or login with</p>
+            <div class="flex flex-row">
+              <!-- Google Button -->
+
+              <button
+                type="button"
+                class="flex items-center w-6/12 border border-red-500 justify-center p-3 rounded-xl m-2 hover:bg-red-400 hover:text-white hover:border-0 active:bg-red-500 font-semibold"
+              >
+                <img src="./Assets/google.webp" alt="google" class="w-4 mr-2" />
+                Google
+              </button>
+
+              <!-- Facebook Button -->
+
+              <button
+                type="button"
+                class="flex items-center w-6/12 border border-blue-500 justify-center p-3 rounded-xl m-2 hover:bg-blue-700 hover:text-white hover:border-0 active:bg-blue-800 font-semibold"
+              >
+                <img
+                  src="./Assets/facebook.png"
+                  alt="facebook"
+                  class="w-4 mr-2"
+                />
+                Facebook
+              </button>
+            </div>
+          </form>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
