@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 1</title>
+
+    <style>
+
+        body {
+            background-color: rgb(242, 212, 217);
+            text-align: center;
+            font-weight: 800;
+        }
+
+        .mg-b {
+            margin-bottom: 100px;
+        }
+
+        #inputString {
+            margin-top: 20px;
+        }
+
+        #button {
+            width: 200px;
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(192, 192, 192);
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #button:hover {
+            background-color: rgb(255, 255, 255);
+        }
+
+        label {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        input {
+            width: 300px;
+            height: 30px;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+            border: 3px solid palevioletred;
+            padding: 10px 0;
+        }
+
+        h2 {
+            margin-top: 70px;
+        }
+
+
+        #result {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <h1> Boss Baby's Revenge </h1>
+
+    <form id="warResultForm">
+        <h3>S = Shot from neighbor</h3>
+        <h3 class="mg-b">R = Revenge from boss baby</h3>
+        <label for="inputString">Input shot history (S and R only):</label> <br>
+        <input type="text" id="inputString" name="inputString" placeholder="Ex : SRSRS" required><br><br>
+        
+        <input id="button" value="Submit" onclick="handleSubmit()">
+    </form>
+
+    <h2>Result</h2>
+    <p id="result"></p>
+
+    <script src="./App.js"></script>
+</body>
+</html>
